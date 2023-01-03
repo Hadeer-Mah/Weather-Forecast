@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">  
+    <link href="https://fonts.googleapis.com/css2?family=Shalimar&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="position-relative">
+  <div class="overlay position-absolute"></div>
+    <nav class="navbar navbar-expand-lg py-0">
+        <div class="container text-center text-white d-flex justify-content-center">
+          <h1>Weather Forecast</h1>
+        </div>
+      </nav>
+      <section id="forecast" class="d-flex justify-content-center align-items-center mt-5">
+        <div class="container box-temp py-3">
+              <form class="d-flex" role="search">
+                <input class="form-control" type="search" placeholder="Search for a City...." id="searchInput" aria-label="Search">
+              </form>
+              <div class="row mt-4 gy-1 align-items-center">
+                <div class="col-md-4 text-center text-white overflow-hidden">
+                  <div class="d-flex align-items-center justify-content-center bg-black bg-opacity-50 px-1 py-5 card">
+                    <div class="content">
+                      <h3 id="location" class="mb-0"></h3>
+                      <p id="currentDay" class="mb-0 fw-semibold"></p>
+                      <p class="fw-semibold mb-0"><span id="date"></span> <span id="monthName"></span></p>
+                      <img id="icon1"></img>
+                      <h2 id="today-temp"></h2>
+                      <p id="condition" class="fw-semibold mb-0"></p>
+                      <div class="details">
+                        <i class="fas fa-umbrella ps-1"></i>
+                        <span id="humidty"></span> <span>%</span>
+      
+                        <i class="fas fa-wind ps-3 pe-1"></i>
+                        <span id="wind"></span> <span>km/h</span>
+      
+                        <i class="far fa-compass ps-3 pe-1"></i>
+                        <span id="compass"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 text-center text-white">
+                  <div class="d-flex align-items-center justify-content-center bg-black bg-opacity-50 px-1 py-4 card">
+                    <div class="content">
+                      <h3 id="location1"></h3>
+                      <p id="nextDay" class="mb-0 fw-semibold"></p>
+                      <img id="icon2"></img>
+                      <h2 id="next-temp"></h2>
+                      <p id="condition2" class="fw-semibold"></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 text-center text-white">
+                  <div class="d-flex align-items-center justify-content-center bg-black bg-opacity-50 px-1 py-4 card">
+                    <div class="content">
+                      <h3 id="location2"></h3>
+                      <p id="thirdDay" class="mb-0 fw-semibold"></p>
+                      <img id="icon3"></img>
+                      <h2 id="third-temp"></h2>
+                      <p id="condition3" class="fw-semibold"></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+        </div>
+      </section>
+    <script src="js/index.js"></script>
+</body>
+</html>
